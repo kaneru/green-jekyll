@@ -2,7 +2,7 @@
 
 Jekyll theme based on [jekyll-bootstrap-theme](https://henrythemes.github.io/jekyll-bootstrap-theme) and [greenpress](https://github.com/takady/greenpress).
 
-[DEMO](https://kaneru.github.io/green_jekyll)
+[DEMO](https://kaneru.github.io/green-jekyll)
 
 ## Features
 
