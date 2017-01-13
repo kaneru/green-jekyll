@@ -1,0 +1,34 @@
+title: 'green-jekyll'
+author: 'Foo Bar'
+description: > # this means to ignore newlines until "note:"
+  Blog of some
+  person who is awesome and will
+  change these lines.
+
+## note:
+#  use site.path in your templates to make it work for both protocols e.g. http and https
+#  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
+path: '/green-jekyll'
+url:  'https://kaneru.github.io'
+
+permalink: :title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+highlighter: rouge
+
+sass:
+  sass_dir: css
+  style:    expanded
+
+exclude:
+- README.md
+
+safe: true
+lsi: false
+
+include: [_pages]
+
+gems: [rouge, jekyll-sitemap, jekyll-feed]
