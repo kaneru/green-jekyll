@@ -4,7 +4,8 @@
 @import 'bootstrap';
 @import 'syntax';
 
-$font-stack: "Helvetica Neue", Arial, sans-serif;
+$font-stack-sans-serif: "Helvetica Neue", Arial, sans-serif;
+$font-stack-monospace: Monaco, "Courier New", monospace;
 
 html {
   position: relative;
@@ -14,11 +15,13 @@ html {
 body {
   background-color: #ffffff;
   margin-bottom: 60px;
-  font-family: $font-stack;
+  font-family: $font-stack-sans-serif;
 }
 
-body > .container {
-  padding-top: 0px;
+body {
+  >.container {
+    padding-top: 0px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -102,37 +105,35 @@ img {
   margin: 0;
 }
 
-#avatar {
-  width: 150px;
-  height: 150px;
-  float: left;
-  padding: 0 20px 20px 0;
-}
-
 .glyphicon-calendar, .glyphicon-tag {
   font-size: 16px;
 }
 
-.post p {
+.post-date, .post-tags, .post-title {
   display: inline;
+  font-size: 18px;
 }
 
-.date-post {
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 15px;
+.post-date {
+  font-family: $font-stack-monospace;
+  color: #584B4F;
+}
+
+.year {
+  font-family: $font-stack-monospace;
+  font-size: 18px;
   color: #584B4F;
   margin-top: 15px;
 }
 
-.tags a {
+.post-tags, .post-title {
+  margin-left: 15px;
+}
+
+.post-tags a {
   color: #584B4F;
 }
 
-.tags a:hover {
+.post-tags a:hover {
   color: #00be98;
-}
-
-.image-project {
-  width: 300px;
-  height: 300px;
 }
